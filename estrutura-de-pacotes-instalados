@@ -1,0 +1,11 @@
+xorg=21.1.12
+kernel=6.10.9
+gcc=14.2.0
+binutils=2.43
+glibc=2.40
+firefox=131.0
+chromium=129.0.6668.59
+chrome=129.0.6668.89
+notion=3.0.1
+vim=v9.1.0770
+sublime=4169
