@@ -22,3 +22,40 @@ wget
 git
 python
 nodejs
+////////////////------------////////////
+# RUNTIMES E COMPILADORES – PLANO DE ATUALIZAÇÃO
+
+# PYTHON
+# - Patch / segurança: atualizar imediatamente
+# - Minor / major: esperar estabilidade, testar compatibilidade
+Python:
+  - Exemplo patch: 3.11.6 → 3.11.10 (atualizar)
+  - Exemplo major: 3.11 → 4.12.1 (esperar estabilidade)
+
+# RUST
+# - Atualizações de patch: atualizar se necessário
+# - Minor / major: atualizar apenas quando precisar de recursos novos
+Rust:
+  - Exemplo patch: 1.77 → 1.77.2 (atualizar)
+  - Exemplo major: 1.77 → 1.79 (esperar estabilidade, manter toolchains antigos)
+
+# RUBY
+# - Patch / segurança: atualizar imediatamente
+# - Minor / major: testar compatibilidade com gems
+Ruby:
+  - Exemplo patch: 3.2.4 → 3.2.6 (atualizar)
+  - Exemplo major: 3.2 → 3.3 (esperar estabilidade, usar rbenv/rvm)
+
+# JAVA / JDK
+# - Patch / segurança: atualizar imediatamente
+# - Minor / major: manter múltiplas versões e testar compatibilidade
+Java / JDK:
+  - Exemplo patch: 17.0.6 → 17.0.7 (atualizar)
+  - Exemplo major: 17 → 21 (esperar estabilidade, testar apps)
+
+# LUA
+# - Patch / segurança: atualizar quando necessário
+# - Minor / major: atualizar após testes nos apps que usam Lua
+Lua:
+  - Exemplo patch: 5.4.6 → 5.4.8 (atualizar)
+  - Exemplo major: 5.4 → 5.5 (esperar estabilidade)
