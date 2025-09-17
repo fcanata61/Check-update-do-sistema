@@ -1,0 +1,20 @@
+# /etc/profile - ambiente global de login
+
+# Define um PATH mínimo, que pode ser estendido pelos scripts em /etc/profile.d
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+export PATH
+
+# Carrega variáveis simples
+if [ -f /etc/environment ]; then
+    export $(grep -v '^#' /etc/environment | xargs)
+fi
+
+# Executa todos os scripts modulares
+for script in /etc/profile.d/*.sh; do
+    [ -r "$script" ] && . "$script"
+done
+
+# Configuração de shell interativo
+if [ "$PS1" ]; then
+    export PS1='\u@\h:\w \$ '
+fi
