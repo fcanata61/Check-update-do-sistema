@@ -1,0 +1,24 @@
+# PACOTES CRÍTICOS (não atualizar automaticamente, manter estabilidade)
+xorg-server
+xorg-apps
+linux-kernel
+glibc
+gcc
+binutils
+make
+pkg-config
+
+# PACOTES SECUNDÁRIOS / APLICATIVOS (podem ser atualizados conforme necessidade)
+vim
+nano
+sublime
+firefox
+chromium
+google-chrome
+notion
+htop
+curl
+wget
+git
+python
+nodejs
